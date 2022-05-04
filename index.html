@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my website</title>
+   
     <link rel="stylesheet" href="./index.css" />
 </head>
 <body>
@@ -27,6 +28,17 @@
         <div><span></span><span></span><span></span></div>
         <div><span></span><span></span><span></span></div> -->
 
+<!-- 
+            //1. hit enter server request is made
+            //2 returns me a html css js files.(gets the resource)
+            //3.reads(parse) the html file and creates a DOM tree
+            //4. shows(renders) me that dom tree
+            //5. layout (part of css)
+            //6. painting -->
+
+
+
+
         <!-- <table border=1 cellspacing="0">
             <tr><th></th><th colspan="2">Company</th></tr>
             <tr><td>Alfreds Futterkiste</td><td>Maria Anders</td><td>Germany</td></tr>
@@ -34,15 +46,80 @@
             <tr><td>Ernst Handel</td><td>Roland Mendel</td><td>Mexico, Austria</td></tr>
             <tr><td>Ernst Handel</td><td>Roland Mendel</td></tr>
         </table> -->
-        <table border=1 cellspacing="0">
+        <!-- <table border=1 cellspacing="0">
             <tr><th colspan="7">Time table</th></tr>
-            <tr><th rowspan="6">Hours</th><th>mon</th><th></th><th>Tue</th><th>Wed</th><th>Thurs</th><th>Fri</th></tr>
+            <tr><th rowspan="6">Hours</th><th colspan="2">mon</th><th>Tue</th><th>Wed</th><th>Thurs</th><th>Fri</th></tr>
             <tr><td>Biology</td><td>Physics</td><td>Maths</td><td>Science</td><td>Maths</td><td>arts</td></tr>
-            <tr><td>Science</td><td></td><td>Maths</td><td>Science</td><td>Maths</td><td>arts</td></tr>
+            <tr><td colspan="2">Science</td><td>Maths</td><td>Science</td><td>Maths</td><td>arts</td></tr>
             <tr><th colspan="6">Lunch</th></tr>
-            <tr><td>Science</td><td></td><td>Maths</td><td>Science</td><td>Maths</td><td rowspan="2"> Project</td></tr>
-            <tr><td>Science</td><td></td><td>Maths</td><td>Science</td><td>Maths</td></tr>
+            <tr><td colspan="2">Science</td><td>Maths</td><td>Science</td><td>Maths</td><td rowspan="2"> Project</td></tr>
+            <tr><td colspan="2">Science</td><td>Maths</td><td>Science</td><td>Maths</td></tr>
+        </table> -->
+        <!-- forms in html -->
 
-        </table>
+        <form  method="POST">
+            <div>
+                <label for="firstName">First name: </label>
+                <input type="text" id="firstName" placeholder="your first name" required  name="fname" />
+            </div>
+            <br />
+            <div> 
+                <label for="lastName">Last name: </label>
+                <input type="text" id="lastName"  placeholder="your last name" name="lname"  />
+            </div>
+            <br />
+            <div>
+                <label for="email">Email: </label>
+                <input type="email" id="email"  placeholder="abc@xyz.com" required name="email"/>
+            </div>
+            <br />
+            <div>
+                <label for="url">url </label>
+                <input type="url" id="url"  placeholder="abc.com" name="url"/>
+            </div>
+            <br />
+            <div>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">HTML</label><br>
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label for="css">CSS</label><br>
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label for="javascript">JavaScript</label>
+            </div>
+            <br />
+            <div>
+                <input type="checkbox" id="html" name="fav_language" value="HTML">
+                <label for="html">HTML</label><br>
+                <input type="checkbox" id="css" name="fav_language" value="CSS">
+                <label for="css">CSS</label><br>
+                <input type="checkbox" id="javascript" name="fav_language" value="JavaScript">
+                <label for="javascript">JavaScript</label>
+            </div>
+            <br />
+            <div>
+                <label for="selectTag">Select one option</label>
+                <select id="selectTag" name="selectedOption">
+                    <option value="Option1">Option1</option>
+                    <option value="Option2">Option2</option>
+                    <option value="Option3">Option3</option>
+                </select>
+            </div>
+            <div>
+                <input type="reset"/>
+                <input type="submit"/>
+            </div>
+        </form>
+      
+
+        <!-- <input />
+        <input />
+        <button onclick="alert()">Submit</button> -->
+
+
+
+
+
+
+
 </body>
 </html>
