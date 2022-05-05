@@ -2,6 +2,93 @@
     color: green
 } */
 
-td {
+/* td {
     text-align: center;
+} */
+
+selector {
+    font-size: 12px;
+    color: burlywood;
+    font-weight: bold
 }
+
+/* //TAG NAME */
+
+/* //in the end */
+/* selector {
+    font-size: 14px;
+    color: burlywood;
+    font-weight: bold
+} */
+
+/* h1 {
+    color: burlywood;
+    border: 1px solid red;
+    font-size: 18px;
+} */
+
+/* //Class-selector */
+/* .header {
+    color: burlywood;
+    border: 1px solid red;
+    font-size: 18px;
+}
+
+.btn {
+    padding: 10px;
+    color: white
+}
+
+.btn-primary {background-color: aqua;}
+.btn-secondary {background-color: blue;}
+.btn-default {background-color: brown;} */
+
+/* //Id-selector */
+/* #header1 {
+    color: burlywood;
+    border: 1px solid red;
+    font-size: 18px;
+} */
+
+/* //CSS SPECIFICITY */
+/* 
+ID === 10
+CLASS === 5
+TAGS === 1 */
+
+/* h1 {
+    color: burlywood;
+}
+
+.main {
+    color: blueviolet;
+    font-size: 16px;
+} 
+
+#main-header {
+    color: brown;
+}
+
+h1 {
+    color: green;
+    font-size: 18px;
+}
+
+.main {
+    color: aqua;
+}  */
+/* 
+p {
+    font-size: 18px;
+    font-weight: bold;
+    color: chartreuse
+}
+//descendant selector
+div .span1 .para-in {
+    border :1px solid red
+} */
+
+/* //child selector
+//adjacant sibling selector
+// general sibling selector */
+
