@@ -100,11 +100,11 @@ div .span1 .para-in {
 .main {
 
 } */
-h1 {
+/* h1 {
     color: aliceblue;
     font-weight: bold;
     background-color: brown;
-}
+} */
 
 /* h1:hover {
     font-size: 24px;
@@ -122,17 +122,17 @@ input:focus-visible {
 
 
 /* //psudo elemets */
-p {
+/* p {
     color:blueviolet;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
+} */
 
 /* p span.first-letter {
     color: black;
     font-size: 24px;
 } */
 
-p::first-letter {
+/* p::first-letter {
     color: black;
     font-size: 24px;
 }
@@ -149,7 +149,23 @@ p::after {
 p::before {
     content: url(./image/Mickey-Mouse.jpeg);
     transform: scale(.5);
+} */
+
+.main1 {
+    height: 100vh;
+    width: 100vw;
+    border: 1px solid red;
+}
+/* .main2 {
+    height: 150px;
+    width: 150px;
+    border: 5px solid blue;
 }
 
-
-
+.main3 {
+    width: 150px;
+    height: 150px;
+    border: 5px solid green;
+    padding: 5px;
+    margin: 20px;
+} */
