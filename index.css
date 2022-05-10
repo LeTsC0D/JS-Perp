@@ -151,11 +151,11 @@ p::before {
     transform: scale(.5);
 } */
 
-.main1 {
-    height: 100vh;
+/* .main1 {
+    height: 60vh;
     width: 100vw;
     border: 1px solid red;
-}
+} */
 /* .main2 {
     height: 150px;
     width: 150px;
@@ -169,3 +169,62 @@ p::before {
     padding: 5px;
     margin: 20px;
 } */
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 36px;
+    margin: 8px;
+}
+
+.help {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    width: 250px;
+    background-color: greenyellow;
+    position: fixed;
+    /* bottom: 50px; */
+    /* right: 50px ; */
+}
+.main1, .main2, .main3 {
+    font-size: 18px;
+    height: 300px;
+    width: 300px;
+    margin-bottom: 5px;
+    border: 5px solid red;
+    border-radius: 0px 15px 0px 0px;
+    padding: 20px;
+    /* animation-name: boxAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; */
+}
+
+/* @keyframes boxAnimation {
+  0% { box-shadow: 10px 10px black; }
+  25% {box-shadow: 10px 10px darkgray;}
+  50% {box-shadow: 10px 10px white; }
+  75% {box-shadow: 10px 10px darkgray;}
+  100% {box-shadow: 10px 10px black; }
+} */
+
+
+/* // width = content
+// total = content + padding + border + margin
+
+// width = content + padding + border == total  */
+
+/* //4 types of positions in css */
+
+/* 1. static
+2. fixed
+3. relative
+4. absolute
+5. sticky */
+
+
+
