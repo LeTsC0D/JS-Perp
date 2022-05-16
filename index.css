@@ -178,6 +178,8 @@ p::before {
 body {
     font-size: 36px;
     margin: 8px;
+    background-color: bisque;
+    text-align: center;
 }
 
 .help {
@@ -190,6 +192,8 @@ body {
     position: fixed;
     /* bottom: 50px; */
     /* right: 50px ; */
+    left: 10px;
+    top: 50%;
 }
 .main1, .main2, .main3 {
     font-size: 18px;
@@ -203,6 +207,99 @@ body {
     animation-duration: 2s;
     animation-iteration-count: infinite; */
 }
+
+.header {
+    width: 100%;
+    background-color: blanchedalmond;
+    box-shadow: 2px 2px 5px black;
+    position: sticky;
+    top: -5px;
+}
+
+.sticky {
+    border: 1px solid red;
+    border: 1px solid green;
+    position: sticky;
+    top: 1px;
+}
+.main {
+    /* position: relative;
+    left: 10px; */
+    height: 80vh;
+    width: 50vw;
+    border: 1px solid red;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+/* 
+.grand-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 50vw;
+    background-color: blue;
+    position: relative;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    width: 25vw;
+    background-color: red;
+    position: absolute;
+    right: 20%;
+    top: 0px;
+
+}
+
+.child {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    height: 12.5vh;
+    width: 12.5vw;
+    background-color: yellow;
+} */
+
+.main .heading {
+    margin-top: 10px;
+}
+
+/* .name {
+    position: relative;
+    top: -70px;
+    left: 200px;
+} */
+
+
+/* .btn1 {
+    position: relative;
+    /* top: 300px;
+    left: 80px; */
+    /* bottom: 10px;
+} */
+
+/* .btn2 {
+    position: relative;
+    right: 50px;
+} */
+
+/* .btn1 { 
+    position: absolute;
+    left: 50px;
+} */
+
+.btn1 {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
 
 /* @keyframes boxAnimation {
   0% { box-shadow: 10px 10px black; }
@@ -225,6 +322,20 @@ body {
 3. relative
 4. absolute
 5. sticky */
+/* @media only screen and (max-width: 425px) {
+    .btn1 {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+        background-color: green
+    }
+} */
+
+
+
 
 
 

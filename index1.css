@@ -1,0 +1,54 @@
+/* .main1, .main2, .main3 {
+    font-size: 18px;
+    height: 300px;
+    width: 20%;
+    margin-bottom: 5px;
+    border: 1px solid red;
+    border-radius: 0px 15px 0px 0px;
+    display: inline-block;
+} */
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.container > div {
+    border: 1px solid red;
+    width: 20%;
+    height: 20%;
+}
+/* 
+.main {
+    height: 100%;
+    width: 60%;
+    border: 1px solid red;
+}
+.sidebar {
+    width: 40%;
+    height: 100%;
+    border: 1px solid blue;
+}
+.main1 {
+    background-color: yellow;
+    font-size: 18px;
+    height: 10%;
+    margin-bottom: 5px;
+    border: 1px solid red;
+    border-radius: 0px 15px 0px 0px;
+    flex-grow: 1
+}
+
+/* .vaishali {
+    flex-grow: 1
+}
+ */
+
+.vipul {
+    flex-grow: 10000
+} */
