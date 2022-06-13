@@ -289,12 +289,310 @@ var num1 = false;
 
 // abc()
 
+// function abc() {
+//     console.log('function 1')
+// }
+// function def() {
+//     console.log('function 2')
+// }
+// def();
+
+// abc();
+// const i = 0;
+
+// for (let i=0; i< 10; i++) {
+//     console.log(i);
+// }
+// let age = 10;
+// const name1 = null
+// if(name1) {
+//     let name1 = "Ravi"
+//     console.log('true')
+// } else {
+//     console.log(name1)
+//     console.log('fasle')
+// }
+
+// while loop and do while
+// switch
+
+// for..in
+// for...each
+// (age < 10) ? console.log('true') :  console.log('fasle')
 
 
 
 
 
 
+
+// var x = {name:"Newton"}
+
+// function greet(person){
+//     if(person == x){
+//         console.log('hey Newton');
+//     }
+//     else{
+//         console.log('hey school');
+//     }
+// }
+
+// greet(x)
+
+
+// closure, callback, scope
+
+// java is single thereded or multi?
+// javascript is a single threded languge
+
+// call stcks, queue, micro task, macro task
+
+// function abc() {
+//     console.log('line1') // 5sec
+// }
+
+// function def() {
+//     console.log('line2') // 3sec
+// }
+
+// abc()
+// def()
+
+// function getDetail(x) {
+//     console.log('details of the student')
+//     x;
+// }
+
+// function getName() {
+//     console.log("aviral")
+//     console.log("Ravi")
+//     console.log("Abhishek")
+// }
+// getName()
+// // function getValue() {
+// //     return 10;
+// // }
+
+// // getDetail( getValue() + 10 === 20)
+
+// getDetail(getName())
+
+
+// function myDisplayer(some) {
+//     document.getElementById("demo").innerHTML = some;
+//   }
+  
+//   function setTimeout(myCallback,timer) {
+//     let sum = num1 + num2;
+//     myCalculator(sum);
+
+    //execute myCallbackater timer
+//   }
+  
+//   setTimeout(myCalculator, 5000);
+
+
+// console.dir(window)
+// function x() {
+//     console.log('Hello')
+// }
+
+// setTimeout(x, 0)
+// setInterval(x, 2000)
+// console.log()
+// function abc() {
+//     setInterval(x, 1000)
+// }
+// var i = 2;
+// var i = 3;
+// let i = 1;
+// let i = 2;
+// let i =3
+// var i;
+
+//x ===>let i == 1
+// x =====> let i =2
+
+// var x;
+// x ===> i == 2
+// y ====> i == 2
+// let i;
+// for ( i = 1; i <= 2; i++) {
+//     setTimeout(function() { console.log(i) }, 0);
+// }
+
+// for (let i = 1; i <= 2; i++) {
+//     setTimeout(function() { console.log(i) }, 0);
+// }
+
+// function abc() {
+//     console.log('1')
+//     console.log('2')
+//     setTimeout(function() { console.log('3') }, 1000);
+//     console.log('4')
+// }
+// abc()
+
+// var x = "string"
+//objects 
+
+// var x = {
+//     name: "aviral",
+//     age: 81,
+//     isInstructor: true,
+//     "Student name": "Manoj" ,
+//     moreDetail: {
+//         hairColor: "white"
+//     }
+// }
+
+// // console.log(x.Student name)
+// console.log(x["moreDetail"])
+// console.log(x)
+
+// //array
+// var y = ["aviral", 81, true, {}, []]
+// // var y = {
+// //     0: "aviral",
+// //     1: 82,
+// //     2: true
+// // }
+// console.log(y)
+
+
+
+// typeof undefined === typeof null
+
+
+//    var b;
+//    function outer() {
+//   function inner() {
+//     b++; // b = 
+   
+//     console.log(b) //1
+//      b =4;
+//      console.log(b) //2
+//   }
+//   console.dir(inner)
+//   inner()
+//    }
+   
+//    outer(); 
+
+//ARraysssssss
+// const arr = []
+// console.log(typeof(arr))
+
+
+// let obj = {}
+
+// pass by value
+// let name(mem --x) = "aviral";
+// let name1(mem --- y ) = "aviral";
+// name = "Yadav"
+// console.log(name);
+// console.log(name1)
+// console.log(name === name1)
+
+
+// Pass  by referance
+// let arr(mem - x) = [1,2,3,4,5]
+// let arr2 (mem --- x) = [1,2,3,4,5];
+// arr[0] = 0;
+// arr2[1] = 0;
+
+// console.log(arr)
+// console.log(arr2)
+// let arr = [3,2,1]
+// let arr2 = arr
+// arr2 = [1,2,3];
+// let arr = [1,5,3,4]
+// arr[1] = 5
+// arr = x
+
+
+// console.log(arr, arr2)
+
+// let arr1 = [];
+// console.log(arr1)
+// let arr = new Array(1,3,4,6)
+// console.log(arr)
+// console.dir(Array)
+
+
+// let arr = [0,1,56, 56];
+// arr[0] = 0;
+// arr[1] = 1;
+// arr[2] = 56;
+// arr.push(65)
+// arr[3] = 56;
+// arr.push(45)
+// arr.push(65)
+// arr[length-1]
+// arr.pop()
+// arr.shift()
+// arr.unshift()
+// console.log(arr)
+
+
+// let arr = [1,2,3,4,5,6]
+// let res = [];
+// let obj = {name: "aviral", age: 83}
+// for(let i= 0 ; i< n ; i++) {
+//     if(i === index) continue
+//     res.push(arr[i])
+// }
+
+// delete arr[2];
+// delete obj["name"]
+// console.log(obj)
+// console.log(arr[2])
+// console.log(arr.length)
+
+// [0,1,2,3]
+
+// let arr = [1,2,3,4,5,6];
+
+// slice and splice
+//splice(index, number of elements)
+// arr.splice(0,3);
+// console.log(arr)
+// console.log(arr.splice(-1))
+// console.log(arr.slice(0,3))
+// console.log(arr)
+
+// let arr = [16,24,15,68,29,2];
+// // let arr1 = ["z", "b", "a", "f", "g"]
+
+// arr.sort((x,y) => x-y)
+// console.log(arr)
+
+
+// function (a,b) {
+//     if(a<b) return -1
+// }
+
+
+//map, filter, reduce, for each, isArray.
+// let arr = [1,2,3,4,5,6]
+
+// for(let i=0; i<arr.length; i++) {
+//     arr[i] = arr[i]*2
+// }
+// console.log(arr)
+
+// let arr2 = arr.map((elem) => {
+// console.log(arr,arr2);
+
+// let arr3 = arr.filter((elem) => elem%2 !== 0)
+// console.log(arr3)
+// console.log(arr)
+
+// let arr = {};
+// console.log(Array.isArray(arr[i]))
+// let arr = [1,2,3,[4,5,[6,7],8],9]
+// console.log(arr.flat())
+// flatten an array === recirrsion == medium level
 
 
 
