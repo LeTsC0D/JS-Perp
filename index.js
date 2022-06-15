@@ -595,5 +595,228 @@ var num1 = false;
 // flatten an array === recirrsion == medium level
 
 
+//"aviral"   ===> "lariva"
+
+
+// for(let i=0; i<str.length; ji++) {
+
+// }
+
+// let str = "aviral"
+// str.split('').reverse().join('')
+// str.reverse()  ======> not apply ===> works on array
+// let a = [1,2,3,[4,5,[6,7],8],9];
+// a.flat()
+
+
+// function flatten(arr) {
+//     return arr.map(eachElement => {
+//             if(Array.isArray(eachElement)) {
+//                 return flatten(eachElement)
+//             }
+//         return eachElement
+//     }).join(',').split(',')
+// }
+
+// var res = flatten(a)
+// console.log(res)
+
+
+// map ====> return???
+// let arr = [1,2,3,4]
+// var result = arr.map(e => e*2)
+// console.log(result)
+// 10+1+2+3+4+5
+
+// [1,2,3,4,5].reduce((previousValue, currentValue) => previousValue+currentValue , 10)
+
+
+
+//ES6 introduce .. spread operator
+
+// let arr1 = [1,2,3,4,5]
+// let arr2 = [6,7,8,9]
+
+// let arr = ["aviral", ...arr2, ...arr1, "srivastava"];
+
+// console.log(arr)
+// function abc (elem) {
+//     return elem *2
+// }
+
+// // setTimeout(fn, 100)
+// [1,2,3,4].map(function (E) { 
+//    return E*2}
+//     )
+// Array,
+// String
+// Number
+// Boolean
+//ObJECTSSSSSS
+// let obj = {};
+// console.log(obj)
+// var obj1 = new Object()
+// console.log(obj1)
+
+
+// let obj = {
+//     name: 'Ravi',
+//     age: 18,
+//     isStudent: true,
+//     attributes: {
+//         hairColor: 'black',
+//         eyeColor: 'Blue',
+//     },
+//     getAge: function(a) {
+//         console.log(a)
+//     },
+// }
+
+
+// if(obj && obj.attributes) {
+//     obj.attributes.eyecolor
+// }
+// obj?.attributes.eyecolor
+// optional channing
+
+   
+// console.log(typeof(obj.attributes.eyeColor.x.y))
+// delete(obj.isStudent)
+// console.log(obj)
+    // obj.attributes.height = '171cm'
+    // obj = {}
+    // console.log(obj)
+// console.log(obj.attributes.hairColor)
+// obj.getAge('Aviral')
+// console.log(Object.keys(obj)[2])
+// console.log(Object.values(obj))
+// console.log(Object.entries(obj))
+
+
+// let obj1 = {name1: 'aviral'}
+// let obj2 = {name2: 'Ravi', age: 20}
+
+// let obj3 = {...obj1, ...obj2}
+// obj3.age2 = 30
+// console.log(obj3)
+
+
+// const str = "aviral"
+// str = "Yadav"
+
+// const arr1 = [1,2,3,4]
+// arr1[1] = 3
+// console.log(arr1)
+
+
+// const student1 = {
+//     isStudent: true,
+//     name: "aviral",
+//     attributes: {
+//         hairColor: 'black',
+//         eyeColor: 'Blue',
+//     },
+// }
+
+// Object.freeze(student1)
+// Object.freeze(student1)
+
+// student1.isStudent = false
+// student1.attributes.hairColor = 'brown'
+// student1.age =  30
+
+// console.log(student1)
+// let obj = new Object();
+// obj.eys
+
+// let date  = new Date()
+// console.log(date.getDay())
+//what are annagrams????
+
+
+//s1 =  "godg"
+//s2 = "gdog"
+
+// function checkAnA(s1, s2) {
+//     if(s1.length !== s2.length) return 
+//     return s1.split('').sort() === s2.split('').sort()
+// }
+
+// checkAnA()
+
+// console.log(document.all)
+// console.log(document.all[15],document.all[16],document.all[17])
+// document.title = "something new"
+
+//getElemetById
+// var heading = document.getElementById('main-header')
+// console.log(heading)
+
+// var list = document.getElementsByClassName('li-group')
+// console.log(list)
+
+
+// var divs = document.getElementsByTagName('div')
+// console.log(divs)
+
+//QuerySelector
+// var heading = document.querySelectorAll('li-group')
+// console.log(heading)
+// Don't use childNodes
+//FIRSTcHILD
+//last child
+// nextsibling
+// var item = document.querySelector('#item')
+// console.log(item.nextElementSibling)
+// item.parentElement.style.border = "4px solid black"
+{/* <h1>dahsgjha</h1>
+<div><a></a></div> */}
+
+//CREATE A DIV
+// var newdiv = document.createElement('div');
+// newdiv.className= "main"
+// newdiv.id= "main-div"
+// newdiv.setAttribute('title', 'this is a new div')
+
+// var newanchor = document.createElement('a');
+// newanchor.className= "anchor"
+// newanchor.id= "main-anchor"
+// newanchor.setAttribute('href', 'google')
+// console.log(newanchor)
+
+// // newdiv.appendChild(newanchor)
+
+
+// let newText = document.createTextNode('Hello world')
+// newdiv.appendChild(newText)
+
+// console.log(newdiv)
+
+
+// let submit = document.getElementById('btn1')
+// console.log(submit)
+// let input = document.getElementById('input')
+// submit.addEventListener('dblclick', () => console.log('You clicked me'))
+
+// input.addEventListener('keyup', () => console.log('keyUp'))
+
+//Event bubbling
+
+var li = document.getElementById('item1');
+li.addEventListener('click', (e) =>  {
+    e.stopPropagation()
+    console.log('clicked the li element')
+})
+
+var ul = document.getElementById('item');
+ul.addEventListener('click',  () =>  {
+    console.log('clicked the ul element')
+})
+
+
+
+
+
+
 
 
