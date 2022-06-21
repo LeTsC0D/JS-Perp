@@ -1,4 +1,4 @@
-var num1 = false;
+// var num1 = false;
 // var num2 = 10;
 
 // console.log(typeof(num1))
@@ -802,16 +802,117 @@ var num1 = false;
 
 //Event bubbling
 
-var li = document.getElementById('item1');
-li.addEventListener('click', (e) =>  {
-    e.stopPropagation()
-    console.log('clicked the li element')
-})
+// var li = document.getElementById('item1');
+// li.addEventListener('click', (e) =>  {
+//     e.stopPropagation()
+//     console.log('clicked the li element')
+// })
 
-var ul = document.getElementById('item');
-ul.addEventListener('click',  () =>  {
-    console.log('clicked the ul element')
-})
+// var ul = document.getElementById('item');
+// ul.addEventListener('click',  () =>  {
+//     console.log('clicked the ul element')
+// })
+
+
+/* console.log('1')
+console.log('2')
+
+setTimeout(() => console.log('123'), 1000)
+function abc() {
+console.log('3')
+}
+
+console.log('4')DIVIDED IN 2 PARTS.... CALL STACK,,,, QUEUEITERM
+abc(); */
+
+
+//javascript is a single threaded language
+
+//suppose you made any api call
+
+
+
+/// EVENT LOOP IN JAVASCRIPT
+
+//  STACK = []
+
+// queue = [console.log('123')]
+
+//  CALLBACK FUNCTIONS
+// function third(fourth) {
+//     setTimeout(() => {
+//         console.log('this is 3');
+//         fourth(five)
+//     }, 1000)
+  
+// }
+// function four(fifth) {
+//     setTimeout(() => {
+//         console.log('this is 4')
+//         fifth(six)
+//     }, 2000)
+// }
+
+
+// function five(sixth) {
+//     setTimeout(() => {
+//         console.log('this is 5')
+//         sixth()
+//     }, 3000)
+// }
+
+// function six() {
+//     setTimeout(() => {
+//         console.log('this is 6');
+//     }, 4000)
+// }
+//  console.log('This is 1');
+//  console.log('This is 2');
+//  third(four)
+//  console.log('This is 7')
+
+//ES5 ====> PROMISES (TO HELP YOU RESOLVE CALLBACK HELL)
+    // function third() {
+    //     return new Promise((resolve, reject) => {
+    //         setTimeout(() => {
+    //                 // reject('i rejected')
+    //                 resolve('this is third')
+    //         }, 4000)
+    //     }) 
+    // }
+
+//  console.log('This is 1');
+//  console.log('This is 2');
+// third().then(e => console.log(e)).catch(err => console.log(err))
+    // .then(e => console.log(e))
+    // .catch(err => console.log(err))
+
+
+// fetch('https://jsonplaceholder.typicode.com/todos/1')
+//     .then(response => response.json())
+//     .then(data => console.log(data))
+//     .catch(err => console.log(err))
+
+// function logA() { console.log('A') }
+// function logB() { console.log('B') }
+// // function logC() { console.log('C') }
+// function logD() { console.log('D') }
+
+// Click the "RUN" button to learn how this works!
+// logA();
+// setTimeout(logB, 1000);
+
+// Promise.resolve('asdadsd')
+//     .then((text) => console.log(text))
+    
+// logD();
+
+
+// for(let i = 1; i< 10; i++) {
+//     setTimeout(() => console.log(i), 1000*i*2);
+// }
+
+
 
 
 
