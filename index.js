@@ -841,31 +841,15 @@ abc(); */
 //  CALLBACK FUNCTIONS
 // function third(fourth) {
 //     setTimeout(() => {
+//         fourth()
 //         console.log('this is 3');
-//         fourth(five)
-//     }, 1000)
-  
-// }
-// function four(fifth) {
-//     setTimeout(() => {
-//         console.log('this is 4')
-//         fifth(six)
-//     }, 2000)
-// }
-
-
-// function five(sixth) {
-//     setTimeout(() => {
-//         console.log('this is 5')
-//         sixth()
-//     }, 3000)
-// }
-
-// function six() {
-//     setTimeout(() => {
-//         console.log('this is 6');
 //     }, 4000)
 // }
+
+// function four() {
+//         console.log('this is 4')
+// }
+
 //  console.log('This is 1');
 //  console.log('This is 2');
 //  third(four)
@@ -887,11 +871,14 @@ abc(); */
     // .then(e => console.log(e))
     // .catch(err => console.log(err))
 
-
-// fetch('https://jsonplaceholder.typicode.com/todos/1')
+// var result = []
+// fetch('https://randomuser.me/api/')
 //     .then(response => response.json())
-//     .then(data => console.log(data))
+//     .then(data => {
+//         result.push(data.results)
+//     })
 //     .catch(err => console.log(err))
+//     console.log(result)
 
 // function logA() { console.log('A') }
 // function logB() { console.log('B') }
@@ -911,6 +898,110 @@ abc(); */
 // for(let i = 1; i< 10; i++) {
 //     setTimeout(() => console.log(i), 1000*i*2);
 // }
+
+// function third() {
+//     return new Promise((res, rej) => {
+//         setTimeout(() => res('this is 3'), 4000)
+//     })
+// }
+
+// function four() {
+//     return new Promise((res, rej) => {
+//         setTimeout(() => res('this is 4'), 2000)
+//     })
+// }
+
+// function five() {
+//     return new Promise((res, rej) => {
+//         setTimeout(() => rej('this is 5'), 1000)
+//     })
+// }
+
+// console.log('this is 1')
+// console.log('this is 2')
+
+// third().then((x) => {
+//     console.log(x);
+//     four().then((x) => {
+//         console.log(x)
+//         five(x).then((x) => console.log(x))
+//     })
+// })
+
+// Promise.allSettled([third(), four(), five()]).then((x) => {
+// console.log(x)}).catch(x => console.log('someone got rejects'))
+
+// check weather
+//check flight
+
+
+//es6 =====> async await
+
+// function third() {
+//     return new Promise((res, rej) => {
+//         setTimeout(() => res('this is 3'), 4000)
+//     })
+// }
+
+// function four() {
+//     return new Promise((res, rej) => {
+//         setTimeout(() => rej('this is 4'), 2000)
+//     })
+// }
+
+// function six() {
+//     return new Promise((res, rej) => {
+//         setTimeout(() => res('this is 6'), 500)
+//     })
+// }
+
+//  async function init() {
+//     try {
+//         let res = await fetch('https://randomuser.me/api/')
+//         let data = await res.json()
+//         console.log(data)
+//     } catch(x){
+//         console.log(x);
+//     }
+// }
+
+
+// init();
+
+
+//setInterval
+//setTimeout
+//Event loop
+//Callback
+//promises
+//async await
+// var x = setTimeout(() => console.log('abc'), 2000)
+// var y = setTimeout(() => console.log('abc'), 1000)
+// console.log(x)
+// console.log(y)
+
+// var x = setInterval(() => console.log('abc'), 2000)
+// // console.log(x)
+
+// setTimeout(() => clearInterval(x), 10000)
+// 1,2,3,4,5,6,7,8,9
+
+
+//debouncing and throttling
+// ajsdakjs  ===> 0.5
+// zxmncbznxzcbmncbcnzbcnmxzbmn ===> 0.5 sec
+
+//debouncing
+
+// input.onChange = debounceFn(apiCall, 1000) {// make api call}
+
+//     var debounceFn = (apiCall, delay) => {
+//         clearTimeout(timerId)
+//        timerId =  setTimeout(apiCall, delay)
+//     }
+
+
+
 
 
 
