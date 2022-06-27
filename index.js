@@ -1003,12 +1003,192 @@ abc(); */
 
 
 
+// function abc() {
+//     var name = "aviral"
+//     function def () {
+//         function ghi() {
+//             return(name)
+//         }
+//     }
+// }
+
+//currying 
+    // add(5)(6) ==== 11
+
+// function add(a) {
+//     return function(b) {
+//         return a+b
+//     }
+// }
+// console.log(add(5)(6))
+
+
+///this in javascript
+// console.log(this)
+
+
+// var student1 = {
+//     name: 'aviral',
+// }
+
+// var student2 = {
+//     name: 'manoj'
+// }
+// // var arr = [{},{},{}]
+// function getName (age, hairColor) {
+//     console.log(`his name is ${this.name} and age is ${age} and haircolor is ${hairColor}`)
+// }
+
+// getName.call(window,21, 'black') //output
+// getName.call(student1,21, 'white') 
+// getName.call(student2,21, 'brown')
+
+// getName.apply(window, [21, 'black']) // output
+// getName.apply(student1, [25, 'white'])
+// getName.apply(student2, [30, 'brown'])
+
+// var result = getName.bind(student1)
+// ///call bind and apply ====> 
+
+// result()
+
+
+// let hero = {
+//     _name: 'Manish',
+//     getIdentitiy: () => {
+//         return this._name
+//     }
+// }
+// console.log(hero.getIdentitiy());
+// var stoleIdentity = hero.getIdentitiy.bind(hero)
+// console.log(stoleIdentity()) // ???
+
+// console.log(hero.getIdentitiy()); /// ??
+
+// function getIdentitiy() {
+//    return('aviral')
+// }
+// console.log(getIdentitiy())
+
+// const getIdentitiy1 = () => {
+//     //code xyz
+//     return 'aviral'
+// }
+// console.log(getIdentitiy1())
 
 
 
+// innerFn('xyz')
+
+// let obj1 = {
+//     name: 'aviral'
+// }
+
+// const outerFn = function(item) {
+//     const innerFn = function(_item) {
+//         // console.log(this)
+//         console.log(`value of this is ${this.name} and parameter is ${_item}`)
+//     }
+//     innerFn.call(this,item)
+// }
+
+// outerFn.call(obj1, 'param1')
+
+// N/A ====> window
+// object(f00) =====> FOO
+//foo() ======> window
+// foo.call(context) =====> context
+// foo.apply(context) =====> context
+// var newFoo = new Foo() =====>  newFoo
 
 
 
+//obj.add(5).value ///5
+//obj.substract(5).value //-5
+//obj.add(5).substract(3).value //2
+//obj.substract(5).add(5).substract(3).value // -3
+
+
+// let obj = {
+//     value: 0,
+//     add: function(x) {
+//         this.value = this.value + x
+//         return this
+//     },
+//     substract: function(x) {
+//         this.value = this.value - x
+//         return this
+//     }
+// }
+// let result = obj.substract(5).add(5).substract(3).value
+// console.log(result)
+
+// let abc = {
+//     name: 'aviral',
+//     age: 50
+// }
+
+
+// let newObj = new abc()
+// console.log(newObj)
+
+//regular function
+
+// let add = function(n1, n2) {
+//     return n1+n2
+// }
+
+// let add1 = new add(1,2)
+// console.log(add1)
+
+//constructor
+// let Car = function(color, brand, convertable) {
+//     //create public properties
+//     this.color = color
+//     this.brand = brand
+//     this.getColor = function() {
+//         console.log(this.color)
+//     }
+// }
+
+// // let Person = function(name, hairColor) {
+// //     this
+// // }
+
+// let car1 = new Car('red', 'tata', false)
+// let car2 = new Car('blue', 'mahindra', true)
+
+
+// console.dir(car1) 
+// console.dir(car2) 
+
+// console.log(car1 instanceof Car)
+
+// console.log(car2)
+
+// Array.isArray([])
+// Object, Array, String, 
+
+
+// prototype, prototypal inheritance
 
 
 
+// let abc ={
+//     a:5,
+//     b: {
+//         c:7,
+//         d:{
+//             e:7
+//         }
+//     }
+// }
+
+
+// let abc1 = {a: 5, b: undefined, }
+// console.log(abc.a?.b?.d.e)
+
+// let abc1 = { a: 5,c: 7, e:7 }
+// for(let i in abc) {
+
+// }
