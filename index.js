@@ -1144,23 +1144,39 @@ abc(); */
 //constructor
 // let Car = function(color, brand, convertable) {
 //     //create public properties
-//     this.color = color
-//     this.brand = brand
-//     this.getColor = function() {
-//         console.log(this.color)
-//     }
-// }
+//      this.color = color
+//     var convertable = false
 
+//     getColor = function() {
+//         return color
+//     }
+
+//      getConvertable = function() {
+//         return convertable
+//     }
+
+//     var temp = {}
+//     temp.newProp = getConvertable;
+//     return temp
+// }
+// let car1 = new Car('red', 'tata', false)
+// console.log(car1)
+// console.log(car1.newProp())
 // // let Person = function(name, hairColor) {
 // //     this
 // // }
 
+// public property acces karna
+// public method access  karna
+// private propert access karna with public method
+// access private propert ywith private method
+
+
 // let car1 = new Car('red', 'tata', false)
 // let car2 = new Car('blue', 'mahindra', true)
 
-
-// console.dir(car1) 
-// console.dir(car2) 
+// console.dir(car1.getConvertable()) 
+// console.dir(car2 instanceof Car) 
 
 // console.log(car1 instanceof Car)
 
@@ -1192,3 +1208,184 @@ abc(); */
 // for(let i in abc) {
 
 // }
+
+
+
+//////////////////////////////////////////////////////////
+
+// let Car = function(color) {
+//     this.color = color
+//     this.getName = function() {
+//         console.log('This is a getName function')
+//     }
+// }
+//prototype
+// Car.prototype.getColor = function() {
+//     console.log('This is a geColor function')
+// }
+
+
+// let redCar = new Car('red')
+// console.dir(redCar)
+// Array.prototype.map = function() {
+//     console.log('this is generate x')
+// }
+
+// .protoype ====> [[Prototype]]...... __proto__
+
+// __proto__ is the actual object what is used in th elookup chain to resolve methods
+// prototype is the object that is used to build __proto__
+
+// Object.prototype.toNumber = function() {
+//     console.log('this is some random number')
+// }
+// let obj = {};
+// console.dir(obj);
+
+// obj.__proto__ = 
+// Object. = null
+// console.dir( Object)
+// let arr = [];
+
+// console.log(arr.map())
+// [1,2,3,4].map(() => console.log(x))
+
+
+
+// let Car = function(name) {
+//     this.name = name
+// }
+// Car.prototype.getName = function() {
+//     console.log('Hello i am outside constructor')
+// }
+
+// Car.__proto__ = null //// wrong 
+
+// let redCar = new Car('red')
+// console.log(redCar)
+// redCar.getName()
+
+// var arr = [1,2,3]
+// // console.dir(arr)
+
+// // console.dir(arr)
+// console.log(arr.__proto__ === Array.prototype)
+// // console.dir(arr.__proto__.__proto__)
+// Array.prototype = null
+
+// console.log(Array.prototype)
+// Array.prototype.map = function() {
+//         console.log('asdjkahkdjh')
+// }
+// console.log(arr.__proto__.__proto__ === Object.prototype)
+// // console.dir(arr.__proto__.__proto__.__proto__)
+// console.log(arr.__proto__.__proto__.__proto__ === null)
+
+
+// let Car = function(color) {
+//     this.color = color
+
+//     this.slice = function() {
+//         console.log('slice')
+//     }
+//     this.concate = function () {
+//         console.log('concat')
+//     }
+// }
+
+// Car.prototype.concate = function() {
+//     console.log('map')
+// }
+// // var arr = [1,2,3]
+// // arr.map()
+// let redCar = new Car('red')
+// console.dir(redCar)
+
+
+
+// var s1 = new String("aviral")
+
+// String.prototype.getVowels = function() {
+//     // x.split()
+//     // if()
+//     console.log(this)
+//     let count = 0;
+//     for(let i =0; i< this.length; i++) {
+//         if(this[i] === 'a' ||this[i] === 'e'|| this[i] === 'o'  ) count ++
+//     }
+//     return count
+// }
+
+// console.log(s1.getVowels())
+
+
+// Array.prototype.myMap = function(callbackFn) {
+//     var arr = [];              
+//     for (var i = 0; i < this.length; i++) { 
+//        /* call the callback function for every value of this array and       push the returned value into our resulting array
+//        */
+//       arr.push(callbackFn(this[i], i, this));
+//     }
+//     return arr;
+//   }
+
+
+// Array.prototype.newfilter = function(callbackFn) {
+//     var arr = [];              
+//     for (var i = 0; i < this.length; i++) { 
+//        /* call the callback function for every value of this array and       push the returned value into our resulting array
+//        */
+//       arr.push(callbackFn(this[i], i, this));
+//     }
+//     return arr;
+//   }
+
+
+// [1,2,3,4].map(() => console.log('akdhga'))
+
+
+// -------------------------------
+
+//deep copy and shallow copy
+
+let obj = {name: 'aviral', address: {street: 'Banglore'}}
+
+// let obj1 = obj;
+// obj1.name = "Abhishek"
+
+
+let obj1 = {...obj}
+obj1.name = "Abhishek"
+
+// obj1.address.street = "Jodhpur"
+// console.log(obj)
+// console.log(obj1)
+
+
+let obj2 = Object.assign({} , obj)
+
+// obj2.address.street = "Jodhpur"
+// console.log(obj)
+// console.log(obj2)
+
+
+let obj3 = JSON.parse(JSON.stringify(obj))
+obj3.address.street = "Jodhpur"
+console.log(obj)
+console.log(obj3)
+
+
+// let and const are hoisted???? ===> NO
+// Temporarl dead zone
+// CALL BIND AND APPLY
+// setTimeout in for loops
+// closures
+// hoisting
+// this
+// debouncing and thrttle
+// memoization
+// how to polyfills  (map and filter)
+// currying funtion (ex of closure)
+// promise asycn await callback
+// prototype
+// es6 (???)
