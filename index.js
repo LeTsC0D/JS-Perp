@@ -1348,31 +1348,31 @@ abc(); */
 
 //deep copy and shallow copy
 
-let obj = {name: 'aviral', address: {street: 'Banglore'}}
+// let obj = {name: 'aviral', address: {street: 'Banglore'}}
 
 // let obj1 = obj;
 // obj1.name = "Abhishek"
 
 
-let obj1 = {...obj}
-obj1.name = "Abhishek"
+// let obj1 = {...obj}
+// obj1.name = "Abhishek"
 
 // obj1.address.street = "Jodhpur"
 // console.log(obj)
 // console.log(obj1)
 
 
-let obj2 = Object.assign({} , obj)
+// let obj2 = Object.assign({} , obj)
 
 // obj2.address.street = "Jodhpur"
 // console.log(obj)
 // console.log(obj2)
 
 
-let obj3 = JSON.parse(JSON.stringify(obj))
-obj3.address.street = "Jodhpur"
-console.log(obj)
-console.log(obj3)
+// let obj3 = JSON.parse(JSON.stringify(obj))
+// obj3.address.street = "Jodhpur"
+// console.log(obj)
+// console.log(obj3)
 
 
 // let and const are hoisted???? ===> NO
@@ -1389,3 +1389,219 @@ console.log(obj3)
 // promise asycn await callback
 // prototype
 // es6 (???)
+// event loop
+
+// Q1
+// let variable = 10;
+  
+// (function () {
+//     console.log(variable);  //1
+//     let variable = 20;
+//     console.log(variable);  //2
+// })("");
+
+//  console.log(variable); //3
+
+
+
+
+//Q2
+// const ob = {
+//     name1: "John",
+//     hello: () => {
+//        console.log(this.name1)
+//     },
+//    };
+   
+//    ob.hello();
+
+//    const ob = {
+//     name1: "John",
+//     hello: function() {
+//     console.log(this.name1);
+//     },
+//    };
+//    const hello2 = ob.hello.bind(ob);
+//     hello2();   JSON????
+// {{key: 'b'}: 123, {key:'c'}: 456}
+// var a={},b={key:'b'},c={key:'c'};
+// a[b]=123
+// a[c]=456
+// console.log(a[b])
+// a: {
+//     [object Object] : 456
+// }
+// alert({a: 2})
+
+// ==================ES6==================
+
+
+// 1) var,  let and const
+
+//2) template string
+
+
+// var name = "aviral"
+// var hairColor = "white"
+
+// console.log("hi my name is "+ name + " and my hair color is " + hairColor)
+
+// console.log(`hi my name is ${name === "aviral" ? "Aishwar" : null} and my hair color is ${hairColor}`)
+
+
+ //3 spread operator
+
+// let user = {
+//     name: 'aviral',
+//     occupation: 'developer'
+// }
+
+// let newObj = {...user}
+// let arr = [1,2,3,4,5,6]
+
+
+//4 object desturce
+// let user = {
+//     name: {
+//         firstNmae: 'aviral',
+//         lastName: 'pandey'
+//     },
+//     occupation: 'developer'
+// }
+
+// let name = user.name;
+// let occupation = user.occupation
+
+
+// let {occupation, name} = user
+// let {firstNmae, lastName} = user.name
+// console.log(name, occupation)
+// occupation = "sales"
+// console.log(firstNmae, lastName)
+
+
+// let arr = [1,2,3,4]
+// let arr1 = [{name: 'aviral'}, {name: 'danish'}]
+
+// let [x,y] = arr1
+// let {name} =x
+// console.log(name)
+
+
+
+// 5 fat arrow functionnnnnn
+
+// function sum(x,y) {
+//     return x + y
+// }
+// console.log(sum(2,3))
+
+
+// let sum1 = (x,y) => {
+//     return x+y
+// }
+// console.log(sum1(2,3))
+
+
+// let obj5 = {
+//     name: 'aviral'
+// }
+
+// const outerFn = (item) =>  {
+//     console.log('1', this);
+//     const innerFn = function( _item) {
+//         console.log('2', this);
+//         const moreinnerFn = () => {
+//             console.log('3', this)
+//         }
+//         moreinnerFn()
+//     }
+//     innerFn.call(obj5, item)
+// }
+
+// outerFn.call(obj5, 'param1')
+
+//value of this cannot be changed inside arrow function
+
+//closest non arrow function ka this is arrow function ka this
+
+
+
+//functions (...)
+// rest operator
+
+//default parameter
+// let arr = [1,2,3]
+// let arr1 = [4,5,6]
+// let arr3 = [...arr, ...arr1]
+// console.log(arr3)
+
+// let sum = (...x) => {
+//     // console.log(a,b)
+//     // console.log(x)
+//     let sum = 0;
+//     for(let i=0; i<x.length; i++) {
+//         sum = sum + x[i]
+//     }
+//     console.log(sum)
+// }
+
+// sum(1,2,3,4,5,6)
+
+// 'use-strict';
+// function sum(a,b =10) {
+//     console.log(a,b)
+// }
+// sum(1)
+// x =10;
+// let  sum = (...x) => {
+//     // console.log(a,b)
+//     // console.log(x)
+//     console.log(x)
+//     let arr = [...arguments]
+//     console.log(arr)
+
+    // let sum = 0;
+    // for(let i=0; i<x.length; i++) {
+    //     sum = sum + x[i]
+    // }
+    // console.log(sum)
+// }
+
+// sum(1,2)
+
+// let add1 = new sum()
+// console.log(add1)
+
+
+// add(2)(3)  ===> 5
+
+// function add(x) {
+//         return function(y) {
+//             return x+y
+//         }
+// }
+// console.log(add(2,3,4)(3,1))
+// add(2,3,4)(3,1)
+// add(2)(3)(4)(3)(1)
+
+
+// function add(x) {
+//     let sum = x
+//     return function resultFn(y) {
+//         if(arguments.length) {
+//             sum += y;
+//             return resultFn;
+//         }
+//         return sum
+//     }
+// }
+
+
+// console.log(add(2)(3))
+// console.log(add(2)(3)(4)(5))
+// console.log(add(2))
+
+
+
+
